@@ -30,6 +30,7 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  height: 85vh;
 }
 
 .place-to-stay-info {
@@ -283,6 +284,37 @@ body {
 .search-bar-container > *:hover {
   background-color: #ebebeb;
   border-radius: 2rem;
+}
+
+.im-flexible {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: center;
+  height: 74vh;
+  align-items: center;
+}
+
+.im-flexible-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.im-flexible-container > * {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.im-flexible-container div:last-child span {
+  background-color: white;
+  padding: 16px 50px;
+  border-radius: 2rem;
+  color: rgb(116, 37, 116);
+  box-shadow: 1px 1px 50px #888888;
 }
 
 @media only screen and (max-width: 600px) {
