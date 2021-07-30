@@ -1,0 +1,296 @@
+body {
+  font-family: "Lexend", sans-serif;
+  width: 100vw;
+}
+
+.main-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.covid-news {
+  width: 100%;
+  background-color: #222222;
+  color: #a3a3a3;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.43;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.place-to-stay {
+  width: 100vw;
+  background-image: url("images/homapage/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg");
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.place-to-stay-info {
+  width: 100%;
+  height: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.airbnb-logo {
+  display: flex;
+  align-items: center;
+}
+
+.airbnb-logo-col {
+  display: flex;
+  width: 25%;
+  justify-content: flex-start;
+}
+
+.airbnb-list-col {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.airbnb-user-login-col {
+  display: flex;
+  width: 25%;
+  justify-content: flex-end;
+}
+
+.airbnb-logo .fab.fa-airbnb {
+  font-size: 37px;
+  padding-right: 0.25rem;
+}
+
+.airbnb-logo-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.airbnb-list {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.airbnb-list > * {
+  padding: 16px 10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.airbnb-list > *:hover {
+  opacity: 0.8;
+}
+
+.airbnb-list > *:hover .list-bottom-hover-border {
+  visibility: visible;
+  width: 5px;
+  transition: width 0.2s;
+}
+
+.list-bottom-hover-border {
+  visibility: hidden;
+  width: 0px;
+  position: absolute;
+  height: inherit;
+  border-bottom: 2px solid white;
+  height: 40px;
+}
+
+.user-login {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.user-login > * {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-login {
+  color: grey;
+  border: 1px solid gray;
+  background-color: white;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-left: 0.5rem;
+  height: 40px;
+}
+
+.bi.bi-list {
+  width: 20px;
+  height: 20px;
+  color: #222222;
+  margin-right: 0.5rem;
+}
+
+.bi.bi-person-circle {
+  fill: #ff385c;
+  width: 25px;
+  height: 25px;
+}
+
+.become-a-host:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.bi.bi-globe2 {
+  display: flex;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.bi.bi-globe2:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-container {
+  background-color: white;
+  width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  border: 1px solid #887171;
+  border-radius: 2rem;
+}
+
+.search-bar-location {
+  width: 40%;
+}
+
+.search-bar-check-in {
+  width: 20%;
+}
+
+.search-bar-check-out {
+  width: 20%;
+}
+
+.search-bar-guest {
+  width: 30%;
+}
+
+.search-bar-container > * {
+  padding: 14px 0px 14px 24px;
+}
+
+.search-bar-container > * > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 24px;
+}
+
+.search-bar-container div:nth-child(-n + 3) div {
+  border-right: 1px solid #887171;
+}
+
+.search-bar-guest-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-bar-guest-container section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 24px;
+}
+
+.search-bar-guest-container section:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff385c;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 0.5rem;
+  bottom: -7px;
+  position: absolute;
+}
+
+.search-bar-guest-container section:nth-child(2):hover {
+  background-color: #e31c5c;
+}
+
+.bi.bi-search {
+  color: white;
+}
+
+.search-bar-title-bold {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  padding-bottom: 2px;
+  color: #222222;
+}
+
+.search-bar-light-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #887171;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-bar-location {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.search-bar-guest {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.search-bar-container > *:hover {
+  background-color: #ebebeb;
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .covid-news {
+    font-size: 12px;
+  }
+
+  .place-to-stay-info {
+    display: none;
+  }
+}
