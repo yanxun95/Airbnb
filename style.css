@@ -317,12 +317,65 @@ body {
   box-shadow: 1px 1px 50px #888888;
 }
 
-@media only screen and (max-width: 600px) {
+.mobile-search-bar-container {
+  display: none;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mobile-search-bar {
+  width: 100%;
+  background-color: white;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 4px;
+  border-radius: 2rem;
+  border: 1px solid white;
+}
+
+.mobile-search-bar .bi.bi-search {
+  color: rgb(34, 34, 34);
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+.mobile-search-bar span {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
   .covid-news {
     font-size: 12px;
   }
 
   .place-to-stay-info {
     display: none;
+  }
+
+  .place-to-stay {
+    height: 60vh;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .mobile-search-bar-container {
+    display: block;
+  }
+
+  .im-flexible {
+    height: 523px;
   }
 }
