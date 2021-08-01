@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 body {
   font-family: "Lexend", sans-serif;
   width: 100vw;
@@ -26,11 +28,11 @@ body {
 .place-to-stay {
   width: 100vw;
   background-image: url("images/homapage/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg");
-  height: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
+  position: relative;
 }
 
 .place-to-stay-info {
@@ -292,8 +294,12 @@ body {
   padding-right: 80px;
   display: flex;
   justify-content: center;
-  height: 74vh;
   align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 146px;
+  bottom: 0;
 }
 
 .im-flexible-container {
@@ -354,6 +360,57 @@ body {
   white-space: nowrap;
 }
 
+.explore-nearby-container {
+  padding: 64px 80px 0px;
+}
+
+.explore-nearby h2 {
+  font-weight: 700;
+}
+
+.explore-nearby-row-container .row {
+  padding-top: 8px;
+}
+
+.explore-nearby-row-container .row > * {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.explore-img-container {
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+}
+
+.explore-img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  border-radius: 0.75rem;
+}
+
+.explore-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+
+.explore-title {
+  font-weight: 600;
+}
+
+.explore-time {
+  font-weight: 100;
+}
+
+.live.anywhere-container {
+}
+
 @media only screen and (max-width: 768px) {
   .covid-news {
     font-size: 12px;
@@ -376,6 +433,24 @@ body {
   }
 
   .im-flexible {
-    height: 523px;
+    top: 64px;
+  }
+
+  .col-6.col-md-4.col-xl-3.inside-5-col {
+    display: none;
+  }
+
+  .col-6.col-md-4.col-xl-3.inside-6-col {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .col-6.col-md-4.col-xl-3.inside-7-col {
+    display: none;
+  }
+
+  .col-6.col-md-4.col-xl-3.inside-8-col {
+    display: none;
   }
 }
