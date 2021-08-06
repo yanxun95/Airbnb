@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap");
 body {
   font-family: "Lexend", sans-serif;
   width: 100vw;
+  overflow-x: hidden; /*chech*/
 }
 
 .main-container {
@@ -26,11 +28,11 @@ body {
 .place-to-stay {
   width: 100vw;
   background-image: url("images/homapage/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg");
-  height: auto; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
+  position: relative;
 }
 
 .place-to-stay-info {
@@ -292,8 +294,12 @@ body {
   padding-right: 80px;
   display: flex;
   justify-content: center;
-  height: 74vh;
   align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 146px;
+  bottom: 0;
 }
 
 .im-flexible-container {
@@ -317,12 +323,459 @@ body {
   box-shadow: 1px 1px 50px #888888;
 }
 
-@media only screen and (max-width: 600px) {
+.mobile-search-bar-container {
+  display: none;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mobile-search-bar {
+  width: 100%;
+  background-color: white;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 4px;
+  border-radius: 2rem;
+  border: 1px solid white;
+}
+
+.mobile-search-bar .bi.bi-search {
+  color: rgb(34, 34, 34);
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+.mobile-search-bar span {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.new-section-container {
+  padding: 64px 80px 0px;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.new-section-container .row {
+  padding-top: 8px;
+}
+
+.new-section-container .row > * {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.explore-nearby-row-container {
+  min-width: 500px;
+}
+
+.explore-img-container {
+  width: 64px;
+  height: 64px;
+  margin-right: 16px;
+}
+
+.explore-img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  border-radius: 0.75rem;
+}
+
+.explore-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+
+.explore-title {
+  font-weight: 600;
+}
+
+.explore-time {
+  font-weight: 300;
+}
+
+.place-row-container {
+  padding-right: 8px;
+  padding-left: 8px;
+  min-width: 500px;
+}
+
+.place-row-container .row > * {
+  display: flex;
+  flex-direction: column;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+.place-img-comtainer {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.place-img {
+  width: inherit;
+  height: inherit;
+  border-radius: 0.5rem;
+}
+
+.place-info {
+  color: rgb(34, 34, 34);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.place-info-description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.big-col.outdoor {
+  background-image: url("images/homapage/f0343d6a-328c-4213-90a2-13ba3572a01f.jpg");
+}
+
+.big-col {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem;
+  min-width: 400px;
+}
+
+.big-col-info h2 {
+  font-size: 46px;
+}
+
+.big-col-description {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.big-col-info {
+  width: 35%;
+}
+
+.big-col-info div {
+  margin-top: 2rem;
+}
+
+.outdoor-btn {
+  padding: 14px 24px;
+  background-color: #222222;
+  color: white;
+  border-radius: 0.5rem;
+  width: auto;
+}
+
+.big-col.hosting {
+  background-image: url("/images/homapage/791aba62-2de8-4722-99b5-45838715eb34-landscape.jpg");
+}
+
+.big-col-info.hosting {
+  color: white;
+}
+
+.hosting-btn {
+  padding: 14px 24px;
+  background-color: white;
+  color: black;
+  border-radius: 0.5rem;
+  width: auto;
+  font-weight: 500;
+}
+
+.getaways-destinations {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #dddddd;
+  margin-top: 1.5rem;
+  min-width: 1145px;
+  position: relative;
+}
+
+.getaways-destinations > span {
+  display: flex;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+  color: grey;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.getaways-destinations > span:hover,
+.active {
+  color: black;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.getaways-btn-next {
+  display: none;
+  position: sticky;
+  color: black;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.destinations-row > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.destinations-row > div span:nth-child(2) {
+  color: #888888;
+}
+
+.bi.bi-three-dots {
+  padding: 5px 12px;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 5px #888888;
+}
+
+.getaways-btn-extra {
+  display: none;
+  margin-top: 1rem;
+}
+
+.footer-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 230, 230);
+  margin-top: 5rem;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+
+.new-section-footer-container {
+  padding: 64px 80px 0px;
+  width: 100%;
+}
+
+.footer-about-border {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.f-info span:first-child {
+  font-weight: 500;
+}
+
+.f-info > span {
+  padding-bottom: 1rem;
+}
+
+.footer-airbnb-inc {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-terms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-terms div,
+.footer-terms > span {
+  padding-right: 0.5rem;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.footer-right > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-language-currency {
+  padding-right: 1rem;
+}
+
+.footer-language-currency > div {
+  padding-right: 1rem;
+}
+
+.footer-language-currency > div span {
+  padding-left: 0.25rem;
+  text-decoration: underline;
+}
+
+.footer-logo > i {
+  padding-left: 2rem;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
   .covid-news {
     font-size: 12px;
   }
 
   .place-to-stay-info {
+    display: none;
+  }
+
+  .place-to-stay {
+    height: 60vh;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .mobile-search-bar-container {
+    display: block;
+  }
+
+  .im-flexible {
+    top: 64px;
+  }
+
+  .explore-nearby-row-container .row .col-6:nth-child(n + 5) {
+    display: none;
+  }
+
+  .place-row-container.live .row .col-6:nth-child(n + 3) {
+    display: none;
+  }
+
+  .place-row-container.discover .row .col-6:nth-child(n + 3) {
+    display: none;
+  }
+
+  .big-col {
+    justify-content: flex-start;
+    height: 70vh;
+    text-align: center;
+    padding: 5rem;
+  }
+
+  .big-col.hosting {
+    background-image: url("/images/homapage/791aba62-2de8-4722-99b5-45838715eb34.jpg");
+    justify-content: flex-start;
+    height: 70vh;
+    text-align: center;
+    padding: 5rem;
+  }
+
+  .big-col-info {
+    width: 100%;
+  }
+
+  .big-col-info h2 {
+    font-size: 30px;
+  }
+
+  .destinations-row > div:nth-child(n + 7) {
+    display: none;
+  }
+
+  .getaways-btn-extra {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .getaways-btn-next {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .explore-nearby-row-container .row .col-6:nth-child(n + 7) {
+    display: none;
+  }
+
+  .place-row-container.live .row .col-6:nth-child(n + 4) {
+    display: none;
+  }
+
+  .new-section-footer-container .row {
+    flex-direction: column;
+  }
+
+  .footer-about-border-mobile {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footer-airbnb-inc {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    order: -1;
+  }
+
+  .footer-logo > i {
+    display: none;
+  }
+
+  .footer-language-currency > div {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .footer-terms {
+    display: block;
+  }
+
+  .footer-terms span:nth-child(2) {
     display: none;
   }
 }
