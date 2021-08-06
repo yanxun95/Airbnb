@@ -574,6 +574,90 @@ h3 {
   margin-top: 1rem;
 }
 
+.footer-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 230, 230);
+  margin-top: 5rem;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+
+.new-section-footer-container {
+  padding: 64px 80px 0px;
+  width: 100%;
+}
+
+.footer-about-border {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.f-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.f-info span:first-child {
+  font-weight: 500;
+}
+
+.f-info > span {
+  padding-bottom: 1rem;
+}
+
+.footer-airbnb-inc {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-terms {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-terms div,
+.footer-terms > span {
+  padding-right: 0.5rem;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.footer-right > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-language-currency {
+  padding-right: 1rem;
+}
+
+.footer-language-currency > div {
+  padding-right: 1rem;
+}
+
+.footer-language-currency > div span {
+  padding-left: 0.25rem;
+  text-decoration: underline;
+}
+
+.footer-logo > i {
+  padding-left: 2rem;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 768px) {
   .covid-news {
     font-size: 12px;
@@ -655,6 +739,43 @@ h3 {
   }
 
   .place-row-container.live .row .col-6:nth-child(n + 4) {
+    display: none;
+  }
+
+  .new-section-footer-container .row {
+    flex-direction: column;
+  }
+
+  .footer-about-border-mobile {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footer-airbnb-inc {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    order: -1;
+  }
+
+  .footer-logo > i {
+    display: none;
+  }
+
+  .footer-language-currency > div {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .footer-terms {
+    display: block;
+  }
+
+  .footer-terms span:nth-child(2) {
     display: none;
   }
 }
