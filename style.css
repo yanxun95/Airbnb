@@ -994,8 +994,8 @@ h3 {
 
 .login-phone-number {
   border: none;
-  margin: 0.5rem 0.5rem;
-  width: 96%;
+  border-radius: 0.5rem;
+  width: 100%;
 }
 
 .login-country-number > div {
